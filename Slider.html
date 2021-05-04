@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="slider.css"/>
+
+	
+</head>
+<body>
+	<div id="container">
+		<img class="slides" src="slide-president1.jpg">
+		<img class="slides" src="lpubackground.jpg">
+		<img class="slides" src="lpu1.jpg">
+		<img class="slides" src="lpu3.png">
+		<img class="slides" src="lpuu.jpg">
+		<img class="slides" src="LPU23.jpg">
+
+		<button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+		<button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+
+	</div>
+	<script>
+		var index=1;
+
+		function plusIndex(n){
+			index=index+1;
+			showImage(index);
+		}
+
+		showImage(1);
+		function showImage(n)
+		{
+			var i;
+			var x=document.getElementsByClassName("slides");
+			if(n > x.length){ index = 1};
+			if(n < 1){ index = x.length};
+			for(i=0;i<x.length;i++)
+			{
+				x[i].style.display="none";
+			}
+			x[index-1].style.display="block";
+		}
+		autoSlide();
+
+		function autoSlide() {
+			var i;
+			var x=document.getElementsByClassName("slides");
+			for(i=0;i<x.length;i++)
+			{
+				x[i].style.display="none";
+			}
+			if (index>x.length) {index=1}
+			x[index-1].style.display="block";
+		    index++;
+			setTimeout(autoSlide,2000);
+		}
+	</script>
+
+</body>
+</html>

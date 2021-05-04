@@ -1,0 +1,193 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+</script>
+</head>
+<style>
+	body,html{
+	    height :100%;
+	    margin:0px;
+	}
+	body{
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(lpuu.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	}
+	table{
+		text-decoration-color: white;
+		margin-top: 50px;
+		border-width: 10px;
+		align-content: center;
+	}
+	button{
+		margin-top: 20px;
+		margin-left: 20px;
+		background-color: orange;
+
+	}
+	td{
+		color:white;
+		font-weight: bold;
+	}
+</style>
+<script>
+</script>
+<body>
+	<button type="Button"><a href="lpunest.html">Want to register in Lpunest</a></button>
+<form action="sub.html">
+<table cellpadding="2" width="50%" border="2" align="center" cellspacing="2">
+
+<tr>
+<td colspan=2>
+<center><font size=8 color="red"><b>Student Registration Form</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td><input type=text name=textnames id="textname" placeholder="Name" size="30"></td>
+</tr>
+
+<tr>
+<td>Father Name</td>
+<td><input type="text" name="fathername" id="fathername" placeholder="Father Name" size="30"></font></td>
+</tr>
+<tr>
+<td>Postal Address</td>
+<td><input type="text" name="paddress" id="paddress" placeholder="Postal Address" size="30"></td>
+</tr>
+
+<tr>
+<td>Personal Address</td>
+<td><input type="text" name="personaladdress"
+id="personaladdress" placeholder="Personal Address" size="30"></td>
+</tr>
+
+<tr>
+<td>Sex</td>
+<td><input type="radio" name="sex" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</td>
+</tr>
+
+<tr>
+<td>Country</td>
+<td><select name="Country">
+<option value="-1" selected>select..</option>
+<option value="India">India</option>
+<option value="Nepal">Nepal</option>
+<option value="China">China</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Oman">Oman</option>
+<option value="Yaman">Yaman</option>
+<option value="Sri Lanka">Sri Lanka</option>
+</select></td>
+</tr>
+
+<tr>
+<td>City</td>
+<td><select name="City">
+<option value="-1" selected>select for India</option>
+<option value="New Delhi">New Delhi</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Goa">Goa</option>
+<option value="Lucknow">Lucknow</option>
+<option value="Moradabad">Moradabad</option>
+<option value="Jalandhar">Jalandhar</option>
+<option value="Phagwara">Phagwara</option>
+<option value="Ludhiyana">Ludhiyana</option>
+<option value="Agra">Agra</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="B.Tech">B.Tech</option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="BCA">BCA</option>
+<option value="MCA">MCA</option>
+<option value="Art">Art</option>
+<option value="HTM">Hotel Management</option>
+<option value="BBA">BBA</option>
+<option value="BSC">BSC</option>
+<option value="AG">Agriculture</option>
+</select></td>
+</tr>
+
+<tr>
+<td>District</td>
+<td><select name="District">
+<option value="-1" selected>select for India</option>
+<option value="Nalanda">NALANDA</option>
+<option value="UP">UP</option>
+<option value="Goa">GOA</option>
+<option value="Patna">PATNA</option>
+</select></td>
+
+</tr>
+
+<tr>
+<td>State</td>
+<td><select Name="State">
+<option value="-1" selected>select for India</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Bihar">BIHAR</option>
+</select></td>
+</tr>
+<tr>
+<td>PinCode</td>
+<td><input type="text" name="pincode" id="pincode" placeholder="PinCode" size="30"></td>
+
+</tr>
+<tr>
+<td>EmailId</td>
+<td><input type="text" name="emailid" id="emailid" placeholder="Email-Id" size="30" required=""></td>
+</tr>
+
+<tr>
+<td>DOB</td>
+<td><input type="text" name="dob" id="dob" placeholder="DOB" size="30"></td>
+</tr>
+
+<tr>
+<td>MobileNo</td>
+<td><input type="text" name="mobileno" id="mobileno" placeholder="Mobile-No" size="30" required=""></td>
+</tr>
+<tr>
+<form onreset="abc()">
+
+<td><input type="reset" onclick="ab()"></td>
+</form>
+<script>
+function abc()
+ {
+ 	var y=document.getElementById('emailid').value;
+ 	if(y=="")
+ 		{window.alert("You have not filled the form,please enter your email-id and phn-no to proceed.");}
+    
+}
+</script>
+<script>
+	function ab()
+	{
+		window.alert("The form was reset");
+	}
+</script>
+
+<td colspan="2"><input type="submit"  onclick="abc()" value="Submit Form"  /></td>
+
+
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+#first ul{list-style:none;width:1300px;height:60px;background-color:grey;margin:10px;}
+#first ul li{font-size:25px;float:left;margin-left:10px;text-align:center;}
+#main{
+width:1300px;display:flex;line-height:1.65;padding:20px 50px;margin:40px auto 0 auto;}
+#app{
+	flex: 3;
+	order:2;
+	}
+#hero{
+	flex: 1;
+	order:1;
+	}
+#abhi{
+	flex: 1;
+	order:3;
+	}

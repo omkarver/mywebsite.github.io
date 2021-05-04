@@ -1,0 +1,13 @@
+<DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+
+<title> REDMI NOTE 5 BOOKINGS</title>
+</head>
+
+<body=bg color:"powderblue">
+<h1>COMING SOON<h1>
+</body>
+</html>

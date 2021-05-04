@@ -1,0 +1,74 @@
+html,body{
+	height :100%;
+	margin:0px;
+}
+.bkg{
+	height :100%;
+	background-image: url("900549.gif");
+	background-size: cover;
+}
+	
+.hero{
+	position:absolute;
+	width:1200px;
+	margin-left: 0px;
+	margin-top: 0px;
+
+
+}
+.button{
+	margin-top: 30px;
+	margin-left: 440px;
+
+}
+.btn{
+	border:1px solid pink;
+	padding :10px 30px;
+	color: black;
+	text-transform: uppercase;
+
+}
+.btn-one{
+	background-color: none;
+	font-family:"roboto",sans-serif;
+}
+
+.btm-two{background-color: none;
+	font-family:"roboto",sans-serif;
+
+}
+.btn-one:hover{
+	background-color: darkorange;
+         
+}
+
+.btn-two:hover{
+	background-color: darkorange;
+
+}
+h1{
+	color :red;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 40px;
+	text-align: center;
+}
+h3{
+	color:darkorange;
+	text-decoration: none;
+	font-size: 25px;
+	text-align: center;
+}
+p{
+	color:  green;
+	text-decoration:none;
+	font-family: monospace
+	font-size: 25px;
+	text-align: center;
+
+}
+.container{
+	margin-top: 440px;
+	margin-left: 440px;
+
+}

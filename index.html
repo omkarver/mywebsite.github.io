@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"LPU"</title>
+	<style type="text/css">.footer
+    {
+        width: 100%;
+        height: 150px;
+        background-color: #191919;
+    }
+.footer-content1
+    {
+        height: 100px;
+        width: 400px;
+        margin-left: 150px;
+        margin-top: -60px;
+        color: grey;
+    }
+.footer-content2
+    {
+         height: 15px;
+        width: 30%;
+        margin-left: 870px;
+        margin-top: -70px;
+        color: grey;
+    }
+.footer-content3
+    {
+        color: grey;
+        height: 15px;
+        width: 70%;
+        margin-left: 270px;
+        margin-top: 50px;
+    }
+    
+</style>
+	 <link rel="icon" href="picture/logo.png" type="image">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="slider.css"/>
+
+
+	
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	#box1{
+		height: 100vh;
+		width: 100%;
+		background-image: url("lpustudents.jpg");
+		background-size: cover;
+		display: table;
+		background-attachment: fixed; 
+	}
+	#box2{
+		height:100vh;
+		width: 100%;
+		background-image: url(lpu.jpg);
+		background-size: cover;
+		display: table;
+		background-attachment: fixed;
+	}
+	#box3{
+		height:100vh;
+		width: 100%;
+		background-image: url(lpu11.jpg);
+		background-size: cover;
+		display: table;
+		background-attachment: fixed;
+	}
+	h1{
+		font-family: arial black;
+		font-size: 50px;
+		color: black;
+		margin: 0px;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+		/*transition: transform 2s;*/
+	}
+	h1:hover{
+		transform: rotate(360deg);
+
+	}
+	#omk{
+		 transition: transform 2s;
+		 background:linear-gradient(orange,white,green);
+
+	}
+	#omk:hover{
+		transform: rotate(360deg);
+
+	}
+    #omk{
+	     margin-left: 500px; margin-top: 15px; background-color: lightblue; width: 140px;
+	     text-align: center;
+	     padding: 4px;
+	     font-weight: bold;
+	     font-family: verdana; 
+    }
+    #om>.ov{
+    	transition: 1s;
+
+    }
+    #om>.ov:hover{
+    	transform: scale(1.9);
+    	background:darkorange;
+    }
+    #marq{
+    	background:rgba(19,35,47,0.9);
+    }
+</style>
+
+
+</head>
+<body>
+	<header>
+		  <a href="index.html"><img src="pictures/LPU logo.png" width="180px" height="100px" align="left"  style="position:left; margin-top:10px;margin-left: -40px;">
+		<nav>
+			<h1></h1>
+			<ul id="nav">
+				<li><a class="homered" href="#">Home</li>
+				<li><a class="homeblack" href="vid.html">About Us</li>
+				<li><a class="homeblack" href="contact.html">Contact Us</li>
+			</ul>
+		</nav>
+
+		
+			
+		</div>
+
+	</header>
+	
+	<div>
+
+	<ul class="main-nav">
+		<li class="active"><a href="">ACADEMICS</a></li>
+		<li><a href="galleryy.html">GALLERY</a></li>
+		<li><a href="courses.html">COURSES OFFERED</a></li>
+		<li><a href="admission.html">ADMISSIONS</a></li>
+		<li><a href="1.html">INTERNATIONAL ADMISSIONS</a></li>
+		
+		<li><a href="placement.html">PLACEMENTS</a></li>
+		<li><a href="logi.html" target="_blank">LOGIN HERE</a></li>
+
+	</ul>
+	<div id="om">
+		<!-- <marquee><h2><FONT FONT COLOR="black">Let us arrange a smile for you!.....LPU</marquee> -->
+			<div id="omk">Admission Open</div>
+	    <div class="ov" style="border:  width: 135px; margin-right: 500px; padding: 6px; float: right; margin-top: -26px;"><a href="registration.html">  Apply Now </a></div>		
+	</div>
+	<hr>
+	</div>
+
+		<div id="container">
+		<img class="slides" src="slide-president1.jpg">
+		<img class="slides" src="abc.jpg">
+		<img class="slides" src="lllpou.jpg">
+		<img class="slides" src="lpubackground.jpg">
+		<img class="slides" src="pictures/lpu.jpg">
+		<img class="slides" src="pictures/womens.jpg">
+		<img class="slides" src="pictures/admission.jpg">
+		<img class="slides" src="pictures/training.jpg">
+		<img class="slides" src="pictures/friend.jpg">
+		<img class="slides" src="pictures/2.jpg">
+		<img class="slides" src="lpuu.jpg">
+		<img class="slides" src="LPU23.jpg">
+
+		<button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+		<button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+
+	</div>
+	<script>
+		var index=1;
+
+		function plusIndex(n){
+			index=index+1;
+			showImage(index);
+		}
+
+		showImage(1);
+		function showImage(n)
+		{
+			var i;
+			var x=document.getElementsByClassName("slides");
+			if(n > x.length){ index = 1};
+			if(n < 1){ index = x.length};
+			for(i=0;i<x.length;i++)
+			{
+				x[i].style.display="none";
+			}
+			x[index-1].style.display="block";
+		}
+		autoSlide();
+
+		function autoSlide() {
+			var i;
+			var x=document.getElementsByClassName("slides");
+			for(i=0;i<x.length;i++)
+			{
+				x[i].style.display="none";
+			}
+			if (index>x.length) {index=1}
+			x[index-1].style.display="block";
+		    index++;
+			setTimeout(autoSlide,2000);
+		}
+	</script>
+
+
+    <div id="cont">
+				<div class="verma""> <img src="pictures/lll.png" width="auto" height="auto">
+					<div><span>30000</span>+</div>
+					<h5>STUDENTS</h5>
+				</div>
+				<div class="verma"> <img src="pictures/alumni-icon.png" width="auto" height="auto">
+					<div><span>50</span>k+</div>
+					<h5>ALUMNI</h5>
+				</div>
+				<div class="verma"> <img src="pictures/campus-icon.png" width="auto" height="auto">
+					<div><span>600</span>+</div>
+					<h5>CAMPUS EVENTS</h5>
+				</div>
+				<div class="verma"> <img src="pictures/profile-icon.png" width="auto" height="auto">
+					<div><span>600</span>+</div>
+					<h5>HIGH PROFILE VISITORS</h5>
+				</div>
+			</div>
+
+
+
+
+				<div id="box1"><h1 style="color: lime; font-size: 40px;">Lovely Creation</h1></div>
+
+
+	            <div id="box2"><h1>Lovely Creation</h1></div>
+	            <div id="marq"><marquee><h2 style="color: tomato;);">Let us arrange smile for you!..... LPU</h2></marquee></div>
+	            <div id="box3"><h1 style="color: tomato">Lovely Creation</h1></div>
+
+
+
+
+
+
+	            <div class="footer">
+        
+        <img src="images/footerlogo.png" height="60px" width="60px" style="margin-top:20px;margin-left:50px;border-right:1px solid gray;padding-left:10px;padding-right:10px;">
+        <div class="footer-content1">
+            India's Largest University* Lovely Professional University, Jalandhar-Delhi,<br>
+            G.T. Road, Phagwara, Punjab (INDIA) -144411.<br>
+            Website: http://www.lpu.in
+        </div>
+        <div class="footer-content2">
+            Tel: +91-1824-404404  /  Toll Free: 1800 102 4431
+        </div>
+    <div class="footer-content3">
+      
+        Anti-Ragging/ Privacy Policy/ Disclaimer / RTI/ Helpline 01824 444545 / Problem with this page ? Contact Webmaster
+    </div>
+    </div>
+</body>
+</html>
